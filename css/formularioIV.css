@@ -1,0 +1,123 @@
+body {
+  background-color: #f0f0f0;
+  color: #000;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  max-width: 900px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  color: #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.navbar-custom {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.botones {
+  margin-bottom: 5px;
+  max-width: 100%;
+  height: auto !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.botones:focus,
+.botones:hover,
+.botones:active {
+  border-color: transparent;
+  outline: none;
+}
+
+.mb-5 {
+  margin-bottom: 30px !important;
+}
+
+.form-check-label {
+  margin-left: 5px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  text-align: center;
+}
+
+.formulario {
+  text-align: left;
+}
+
+.anexos-section {
+  margin-bottom: 20px;
+}
+
+.anexos-section label {
+  display: block;
+}
+
+table {
+  text-align: center;
+}
+
+/* Eliminar las flechas para navegadores WebKit (Chrome, Safari, Opera) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Eliminar las flechas en Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.alerta {
+  font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+  margin: 10px 0; /* Espaciado */
+}
+
+.alerta.verde {
+  color: green; /* Color verde para aprobable */
+}
+
+.alerta.rojo {
+  color: red; /* Color rojo para no aprobable */
+}

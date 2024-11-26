@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dee9ff;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.registration-form {
+    padding: 50px 0;
+}
+
+.registration-form form {
+    background-color: #fff;
+    max-width: 100%; /* Cambia a 100% para pantallas pequeñas */
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+    overflow: hidden; /* Evita overflow interno */
+}
+
+.registration-form .form-icon {
+    text-align: center;
+    background-color: #5891ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    line-height: 100px;
+}
+
+.registration-form .item {
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border: 1px solid #d1d1d1;
+    transition: border-color 0.3s ease;
+}
+
+.registration-form .item:focus {
+    border-color: #5891ff;
+    box-shadow: 0 0 5px rgba(88, 145, 255, 0.5);
+}
+
+.registration-form .create-account {
+    width: 25%; 
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group {
+    text-align: center; 
+}
+
+.registration-form .create-account:hover {
+    background-color: #4d80e5;
+}
+
+.registration-form .form-label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-check {
+    margin-bottom: 15px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+/* Botón de histórico responsivo */
+#historicoButton {
+    width: 25%; /* Tamaño predeterminado */
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#historicoButton:hover {
+    background-color: #4d80e5;
+}
+
+@media (max-width: 768px) {
+    .registration-form form {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+        margin: 0; /* Elimina margen que puede causar overflow */
+    }
+
+    .table-responsive {
+        padding: 0;
+        overflow-x: auto; /* Asegura que la tabla se mantenga dentro del contenedor */
+    }
+
+    .registration-form .form-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+
+    #historicoButton {
+        margin-top: 20px;
+        width: 55%; /* Botón ocupa el ancho completo en pantallas pequeñas */
+        font-size: 16px; /* Ajuste del tamaño del texto */
+    }
+}

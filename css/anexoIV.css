@@ -1,0 +1,275 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #dee9ff;
+}
+
+.navbar-custom {
+  padding: 10px;
+}
+
+.registration-form {
+    padding: 50px 0;
+}
+
+.registration-form form {
+    background-color: #fff;
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 50px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+/* Form icon */
+.registration-form .form-icon {
+    text-align: center;
+    background-color: #5891ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    line-height: 100px;
+}
+
+/* Input fields */
+.registration-form .item {
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border: 1px solid #d1d1d1;
+    transition: border-color 0.3s ease;
+}
+
+.registration-form .item:focus {
+    border-color: #5891ff;
+    box-shadow: 0 0 5px rgba(88, 145, 255, 0.5);
+}
+
+/* Button */
+.registration-form .create-account {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form .create-account:hover {
+    background-color: #4d80e5;
+}
+
+/* Labels and headings */
+.registration-form .form-label {
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Checkboxes and radio buttons */
+.form-check {
+    margin-bottom: 15px;
+}
+
+/* Custom styling for radio buttons and checkboxes */
+.form-check-input {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Hover effect */
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .registration-form form {
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+/* Contenedor para los dos .wrapper */
+.form-group-flex {
+    display: flex;
+    justify-content: space-between; /* Para distribuir el espacio entre los contenedores */
+    gap: 20px; /* Espacio entre los dos contenedores */
+}
+
+/* Ajustar el tamaño de los .wrapper */
+.wrapper {
+    flex: 1; /* Hace que los dos contenedores tomen el mismo espacio */
+    max-width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+}
+
+.wrapper .title{
+  color: #fff;
+  line-height: 65px;
+  text-align: center;
+  background: #333;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px 10px 0 0;
+}
+.wrapper .box{
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+}
+.wrapper .box label{
+  display: flex;
+  height: 53px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding-left: 20px;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.wrapper .box label:hover{
+    background: #EDF7FC;
+    cursor: pointer;
+}
+
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-4:checked ~ .option-4,
+#option-5:checked ~ .option-5,
+#option-6:checked ~ .option-6,
+#option-7:checked ~ .option-7,
+#option-8:checked ~ .option-8,
+#option-9:checked ~ .option-9,
+#option-10:checked ~ .option-10,
+#option-11:checked ~ .option-11,
+#option-12:checked ~ .option-12,
+#option-13:checked ~ .option-13{
+  background: #333;
+  border-color: #333;
+}
+
+.wrapper .box label .dot {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot,
+#option-3:checked ~ .option-3 .dot,
+#option-4:checked ~ .option-4 .dot,
+#option-5:checked ~ .option-5 .dot,
+#option-6:checked ~ .option-6 .dot,
+#option-7:checked ~ .option-7 .dot,
+#option-8:checked ~ .option-8 .dot,
+#option-9:checked ~ .option-9 .dot,
+#option-10:checked ~ .option-10 .dot,
+#option-11:checked ~ .option-11 .dot,
+#option-12:checked ~ .option-12 .dot,
+#option-13:checked ~ .option-13 .dot{
+  background: #fff;
+}
+
+.box label .dot::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before,
+#option-3:checked ~ .option-3 .dot::before,
+#option-4:checked ~ .option-4 .dot::before,
+#option-5:checked ~ .option-5 .dot::before,
+#option-6:checked ~ .option-6 .dot::before,
+#option-7:checked ~ .option-7 .dot::before,
+#option-8:checked ~ .option-8 .dot::before,
+#option-9:checked ~ .option-9 .dot::before,
+#option-10:checked ~ .option-10 .dot::before,
+#option-11:checked ~ .option-11 .dot::before,
+#option-12:checked ~ .option-12 .dot::before,
+#option-13:checked ~ .option-13 .dot::before{
+  background: #333;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.wrapper .box label .text {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.secundario {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+  color: #000000;
+}
+
+#option-1:checked ~ .option-1 .secundario,
+#option-2:checked ~ .option-2 .secundario,
+#option-3:checked ~ .option-3 .secundario,
+#option-4:checked ~ .option-4 .secundario{
+  color: #fff;
+}
+
+#option-5:checked ~ .option-5 .text,
+#option-6:checked ~ .option-6 .text,
+#option-7:checked ~ .option-7 .text,
+#option-8:checked ~ .option-8 .text,
+#option-9:checked ~ .option-9 .text,
+#option-10:checked ~ .option-10 .text,
+#option-11:checked ~ .option-11 .text,
+#option-12:checked ~ .option-12 .text,
+#option-13:checked ~ .option-13 .text{
+  color: #fff;
+}
+
+.wrapper .box input[type="radio"] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .form-group-flex {
+      flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+  }
+  
+  .wrapper {
+      margin-bottom: 20px; /* Espaciado entre los wrappers cuando están apilados */
+      max-width: none; /* Permite que tome el 100% del ancho disponible */
+  }
+}

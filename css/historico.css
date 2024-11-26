@@ -1,0 +1,50 @@
+body {
+    background-color: #ffffff; /* Color de fondo más suave */
+    color: #000; /* Cambiar el color del texto a negro */
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #fff; /* Mantener el fondo blanco */
+    padding: 10px;
+}
+
+.container {
+    max-width: 1400px; /* Mantener el ancho máximo */
+    margin-top: 50px; 
+    padding: 30px;
+    background-color: white;
+    color: #000;
+}
+
+.table-responsive {
+    margin-top: 20px; /* Margen superior para mejor separación */
+}
+
+.table th, .table td {
+    vertical-align: middle; /* Alinea el contenido de las celdas */
+}
+
+/* Clases adicionales de estilo que podrían ser útiles */
+hr {
+    border: 1px solid #D6D0D0;
+    margin: 20px 0;
+    width: auto !important;
+}
+
+.botones {
+    margin-bottom: 5px;
+    max-width: 100%;
+    height: auto !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+}
+
+.botones:focus,
+.botones:hover,
+.botones:active {
+    border-color: transparent; /* Asegúrate de que el borde no cambie */
+    outline: none; /* Elimina el contorno del enfoque */
+}
